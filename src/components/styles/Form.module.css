@@ -1,0 +1,79 @@
+.form {
+	position: relative;
+	z-index: 1;
+}
+
+.form:before {
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: -1;
+	inset: -1px 0 50%;
+	background: var(--gray-700)
+}
+
+.container {
+	display: flex;
+	gap: .75rem;
+}
+
+.input {
+	flex-grow: 1;
+	padding: 1rem;
+	border: none;
+	border-radius: .5rem;
+	background: var(--gray-500);
+	color: var(--gray-100);
+	transition: all 300ms ease;
+}
+
+.input::placeholder {
+	color: var(--gray-300);
+}
+
+.input:focus {
+	box-shadow: 0 0 0 1px var(--gray-700), 0 0 0 3px var(--purple-dark);
+}
+
+.button {
+	padding: 0 1rem;
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+	font-size: 0.87rem;
+	line-height: 1.4;
+	font-weight: bold;
+	border: none;
+	border-radius: .5rem;
+	background: var(--blue-dark);
+	color: var(--gray-100);
+	cursor: pointer;
+	transition: all 300ms ease;
+	user-select: none;
+}
+
+.button svg {
+	flex: 0 0 1.25rem;
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+.button:focus {
+	box-shadow: 0 0 0 1px var(--gray-700), 0 0 0 3px var(--blue-dark);
+}
+
+.button:not(:disabled):hover {
+	background: var(--blue);
+}
+
+.button:disabled {
+	background: var(--gray-500);
+	color: var(--gray-300);
+	cursor: not-allowed;
+}
+
+@media (max-width : 767px) {
+	.button span {
+		display: none;
+	}
+}

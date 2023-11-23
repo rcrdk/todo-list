@@ -1,0 +1,19 @@
+.header {
+	display: flex;
+	padding: 3.75vw 0 3.1vw;
+	place-content: center;
+	background: var(--gray-700);
+	pointer-events: none;
+	user-select: none;
+}
+
+@media (max-width : 767px) {
+	.header {
+		padding: 7.5vw 0 6.2vw;
+	}
+}
+
+.brand {
+	display: block;
+	width: 8rem;
+}

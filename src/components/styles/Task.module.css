@@ -1,0 +1,89 @@
+.task {
+	padding: 1rem;
+	display: flex;
+	gap: 1rem;
+	align-items: flex-start;
+	border: 1px solid var(--gray-400);
+	border-radius: .5rem;
+	background: var(--gray-500);
+}
+
+.task p {
+	flex-grow: 1;
+}
+
+.checkbox {
+	flex-shrink: 0;
+	margin-top: 1px;
+	position: relative;
+	flex: 0 0 1.25rem;
+	height: 1.25rem;
+	border-radius: 50%;
+	border: 2px solid var(--blue);
+	color: var(--gray-100);
+	cursor: pointer;
+	transition: all 300ms ease;
+}
+
+.checkbox:before {
+	content: '';
+	display: block;
+	position: absolute;
+	inset: -1rem;
+}
+
+.checkbox svg {
+	position: absolute;
+	inset: 1px 0 auto auto;
+	width: 100%;
+	height: 100%;
+	stroke-width: 3;
+}
+
+.checkbox:hover {
+	background: rgb(var(--blue-dark-rgb) / 30%);
+}
+
+.task--done {
+	border-color: var(--gray-500);
+}
+
+.task--done p {
+	text-decoration: line-through;
+	color: var(--gray-300);
+}
+
+.task--done .checkbox {
+	background: var(--purple);
+	border-color: var(--purple);
+}
+
+.task--done .checkbox:hover {
+	background: var(--purple-dark);
+	border-color: var(--purple-dark);
+}
+
+.delete {
+	margin-top: -0.175rem;
+	flex-shrink: 0;
+	padding: .25rem;
+	line-height: 1;
+	border: none;
+	border-radius: .5rem;
+	background: none;
+	color: var(--gray-300);
+	transition: all 300ms ease;
+	cursor: pointer;
+}
+
+.delete svg {
+	display: block;
+	stroke-width: 1.5;
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+.delete:hover {
+	background: var(--gray-400);
+	color: var(--danger);
+}
