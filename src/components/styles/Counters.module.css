@@ -37,4 +37,5 @@
 	background: var(--gray-400);
 	color: var(--gray-100);
 	border-radius: 1rem;
+	font-variant-numeric: tabular-nums;
 }
