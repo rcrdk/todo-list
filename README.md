@@ -1,10 +1,25 @@
-# Rocketseat Ignite - Desafio 01
-# Praticando os conceitos do ReactJS
+# 📋 To-Do List
+Projeto desenvolvido como desafio da formação React.JS do Ignite na Rocketseat.
 
-Nesse desafio, desenvolvi uma aplicação de controle de tarefas no estilo **To-Do List** em cima de um projeto do Figma utilizando ReactJS com Typescript com base nos conhecimentos básicos aprendidos no primeiro módulo da trilha de ReactJS do Ignite da Rocketseat.
+<br>
 
-**As seguinte funcionalidades foram previstas:**
-- Adicionar uma nova tarefa
-- Marcar e desmarcar uma tarefa como concluída
-- Remover uma tarefa da listagem
-- Mostrar o progresso de conclusão das tarefas
+<p align="center">
+  <img alt="To-Do List Project Preview" src="https://github.com/rcrdk/ignite-challenge-todo-list/blob/main/public/preview.jpeg?raw=true" width="100%" />
+</p>
+
+## 🚀 Tecnologias utilizadas
+
+- [React](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Figma](http://figma.com/)
+
+## 💻 Projeto
+
+O projeto foi desenvolvido com base em um protótipo do Figma que foi oferecido. Foi colocado em prática para reforçar os conhecimentos básicos em estados e sua imutabilidade.
+
+**As funcionalidades previstas incluem:** Adicionar e remover tarefas; Marcar e desmarcar como concluídas; Alterar progresso de conclusão de terefas.
+
+## 🔗 Links
+
+- [Protótipo / Figma](https://www.figma.com/file/kGbRc3yt2G4KJpf826uWhQ/ToDo-List-%E2%80%A2-Desafio-React?type=design&node-id=56%3A96&mode=design&t=AouIfbkQDQWGreum-1)
+- [Deploy](https://ignite-challenge-todo-list.vercel.app/)
